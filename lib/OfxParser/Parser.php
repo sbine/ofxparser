@@ -174,7 +174,7 @@ class Parser
                 break;
             }
             $tag = explode(':', $value);
-            $header[$tag[0]] = $tag[1];
+            $header[$tag[0]] = $tag[1] ?? null;
         }
 
         return $header;
